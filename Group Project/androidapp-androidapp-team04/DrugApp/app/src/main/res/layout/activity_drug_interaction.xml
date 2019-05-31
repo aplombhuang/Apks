@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="team4.drugapp.DrugInteractionActivity">
+
+
+    <Button
+        android:id="@+id/settings_Btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="315dp"
+        android:background="@drawable/settings3"
+        android:onClick="startSettingsActivity" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/Drug1"
+        android:hint="@string/enter_med" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/Drug2"
+        android:hint="@string/interact_search_term"
+        android:layout_marginTop="16dp" />
+
+
+    <Button
+        android:id="@+id/interactionSearch_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/sea"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_marginLeft="15dp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.66"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/interactionDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="17dp"
+                android:isScrollContainer="true"
+                android:nestedScrollingEnabled="true"
+                android:scrollIndicators="top"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                android:scrollbars="vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

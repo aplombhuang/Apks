@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="team4.drugapp.AlarmExecuting">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm Is Executing"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+
+    <Button
+        android:id="@+id/tookMedicineBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="108dp"
+        android:onClick="tookMedicineClick"
+        android:text="took Medicine"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <Button
+        android:id="@+id/didNotTakeMedicineBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tookMedicineBtn"
+        android:layout_alignLeft="@+id/tookMedicineBtn"
+        android:layout_alignRight="@+id/tookMedicineBtn"
+        android:layout_alignStart="@+id/tookMedicineBtn"
+        android:layout_below="@+id/tookMedicineBtn"
+        android:layout_marginTop="65dp"
+        android:onClick="notTakingMedicineClick"
+        android:text="Not Taking Medicine" />
+
+    <ImageButton
+        android:id="@+id/Condition1Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/didNotTakeMedicineBtn"
+        android:layout_alignStart="@+id/didNotTakeMedicineBtn"
+        android:layout_below="@+id/didNotTakeMedicineBtn"
+        android:layout_marginTop="36dp"
+        android:onClick="conditionclick"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/Condition2Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Condition1Btn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/Condition1Btn"
+        android:layout_toRightOf="@+id/Condition1Btn"
+        android:onClick="conditionclick"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/Condition3Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Condition2Btn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/Condition2Btn"
+        android:layout_toRightOf="@+id/Condition2Btn"
+        android:onClick="conditionclick"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/Condition4Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Condition3Btn"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/Condition3Btn"
+        android:layout_toRightOf="@+id/Condition3Btn"
+        android:onClick="conditionclick"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/snoozeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Condition4Btn"
+        android:layout_alignRight="@+id/Condition4Btn"
+        android:layout_alignTop="@+id/tookMedicineBtn"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:onClick="snoozeClick"
+        android:text="Snooze" />
+</RelativeLayout>

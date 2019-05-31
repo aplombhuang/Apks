@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="project0.jellybeanestimator.MainActivity"
+    android:columnCount="2"
+    android:weightSum="1">
+
+
+    <TextView
+        android:text="Jelly Bean Length (cm) :"
+        android:layout_height="wrap_content"
+        android:id="@+id/Ask_lenght"
+        android:textSize="24sp"
+        android:layout_width="wrap_content" />
+
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/Length_Input"
+        android:layout_width="match_parent"
+        tools:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Jelly Bean Diameter (cm):"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Ask_diameter"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/Diameter_Input" />
+
+    <TextView
+        android:text="Size of Jar (mL):"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Ask_volume"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/Jar_Volume"
+        android:elevation="1dp"
+        tools:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/Result_Output"
+        android:inputType="text"
+        android:autoText="false"
+        android:clickable="false"
+        tools:layout_width="match_parent" />
+
+    <Button
+        android:text="Estimate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EstButton"
+        android:onClick="handleClick" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RstButton"
+        android:onClick = "handleClick"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        app:srcCompat="@drawable/jb"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="App Developer: Aplomb Huang CMSC 355, SPRING 2017"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:id="@+id/Personal_Info"
+        android:layout_weight="1.84" />
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "499436734603",
+    "firebase_url": "https://drugapp-dfc5c.firebaseio.com",
+    "project_id": "drugapp-dfc5c",
+    "storage_bucket": "drugapp-dfc5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499436734603:android:0e18fcdbb56ebebc",
+        "android_client_info": {
+          "package_name": "team4.drugapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499436734603-35qo8v1i4mfh1t1k5k0pspt9vgf7rllg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "team4.drugapp",
+            "certificate_hash": "f4fb20006ace2de1fad760d66cf5407aad799367"
+          }
+        },
+        {
+          "client_id": "499436734603-517it7ll1pocaclhaqq9229t74t2ssk2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "team4.drugapp",
+            "certificate_hash": "b6bc98dc65f0d4993ff0c67e9cec6f877a96d037"
+          }
+        },
+        {
+          "client_id": "499436734603-v5ebls95higomv632pstas9cqcv5vtbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMt4BCDLWiKwhruRLACxuAJSsPBNSSd5g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499436734603-v5ebls95higomv632pstas9cqcv5vtbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_alarm_pop_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="team4.drugapp.AddAlarmPopUp">
+
+    <TimePicker
+        android:id="@+id/AlarmTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:timePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/SetAlarmAccept_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="AcceptClick"
+        android:text="Accept" />
+
+    <EditText
+        android:id="@+id/AlarmDescriptionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/AlarmTimePicker"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="Enter alarm name"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/vibrateCb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/AlarmDescriptionTxt"
+        android:layout_toEndOf="@+id/AlarmDescriptionTxt"
+        android:layout_toRightOf="@+id/AlarmDescriptionTxt"
+        android:text="Vibrate?" />
+
+    <Spinner
+        android:id="@+id/minSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AlarmDescriptionTxt"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="19dp"
+        android:layout_toLeftOf="@+id/vibrateCb"
+        android:layout_toStartOf="@+id/vibrateCb" />
+
+    <TextView
+        android:id="@+id/RemindMeTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/minSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:text="Remind Me                              Min before" />
+</RelativeLayout>

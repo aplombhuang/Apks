@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DrugApp</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="add_new_drug">Add New Drug</string>
+    <string name="settings">Settings</string>
+    <string name="view_current_drugs">View Current Drugs</string>
+    <string name="signIn">Already Registered?  Click here to sign-in</string>
+    <string name="register">Register User</string>
+    <string name="enter_med">Enter Medication Here</string>
+    <string name="interact_search_term">Enter Search Term</string>
+    <string name="search_btn">Search</string>
+    <string name="title_activity_drug_detail">DrugDetailActivity</string>
+</resources>
